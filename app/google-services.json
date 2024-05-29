@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1055297610771",
+    "project_id": "qlchitieu-ae36b",
+    "storage_bucket": "qlchitieu-ae36b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055297610771:android:909ff61dc7aa9ed2420be6",
+        "android_client_info": {
+          "package_name": "edu.huflit.ftracerproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055297610771-5nbe0831k7riccj31kt10ik84jtuh0im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmjYKfmR_4rS9r2O9nEUnOGRPX58ZSNEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055297610771-5nbe0831k7riccj31kt10ik84jtuh0im.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

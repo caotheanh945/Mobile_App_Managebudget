@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home" android:title="home" android:icon="@drawable/baseline_home_24" app:showAsAction="always" ></item>
+    <item android:id="@+id/add" android:title="Add" android:icon="@android:drawable/ic_input_add" app:showAsAction="always"></item>
+    <item android:id="@+id/transaction" android:title="Chat" android:icon="@drawable/baseline_chat_24" app:showAsAction="always"></item>
+    <item android:id="@+id/budget" android:title="budget" android:icon="@drawable/baseline_map_24" app:showAsAction="always"></item>
+    <item android:id="@+id/profile" android:title="profile" android:icon="@drawable/baseline_person_24" app:showAsAction="always"></item>
+
+</menu>

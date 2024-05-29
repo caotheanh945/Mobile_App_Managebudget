@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c8f1f7"
+    tools:context=".fragment.ProfileFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="322dp"
+        android:background="@drawable/giadinh1"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/botron_avatar"
+            android:src="@drawable/baseline_person_24" />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:text="Textview"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@id/tvName"
+            android:text="textview@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/botron_button"
+            android:padding="10.5dp"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+            android:text="Quản lý tài khoản"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/botron_button"
+            android:padding="10.5dp"
+            android:drawableStart="@drawable/baseline_event_note_24"
+            android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+            android:text=" Sự kiện"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvFamily"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/botron_button"
+            android:padding="10.5dp"
+            android:drawableStart="@drawable/baseline_family_restroom_24"
+            android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+            android:text=" Thành viên gia đình"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvLogout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/botron_button"
+            android:padding="10.5dp"
+            android:drawableStart="@drawable/baseline_exit_to_app_24"
+            android:text=" Đăng xuất"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

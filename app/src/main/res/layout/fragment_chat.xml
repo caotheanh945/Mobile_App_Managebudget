@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragment.ChatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:background="#DEFDFE"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dangkytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/topradius1"
+            android:padding="10dp"
+            android:text="Tạo tài khoản cho thành viên"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tvGroupchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+
+            android:textSize="20dp"
+            android:text="GROUP CHAT"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/purple_700" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:background="#DEFDFE"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="80dp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="24dp"
+            android:focusableInTouchMode="true"
+            android:hint="Soạn tin nhắn..."
+            android:textStyle="bold"
+            app:counterMaxLength="100"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edUserName"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="100"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/btnsend"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:onClick="clear"
+            android:layout_toRightOf="@id/textInputLayout"
+            android:background="@drawable/baseline_send_24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_below="@id/layout2"
+        android:layout_width="match_parent"
+        android:layout_above="@id/layout3"
+        android:layout_height="570dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Chưa có nhóm...." />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp" />
+    </RelativeLayout>
+</RelativeLayout>

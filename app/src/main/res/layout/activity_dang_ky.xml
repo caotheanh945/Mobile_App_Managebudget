@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEFDFE"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".activity.Dang_Ky">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textview_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:text="Đăng ký tài khoản"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#5e6dbd"
+        android:textSize="35sp" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint=" Nhập tài khoản"
+        app:endIconMode="clear_text"
+        android:backgroundTint="#FFFFFF"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_fullname"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:maxLength="100"
+            app:boxStrokeColor="#5e6dbd" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout0"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint=" Nhập username"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_admin"
+            android:maxLength="100"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="06dp"
+        android:hint=" Số điện thoại"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_phonenumber"
+            android:maxLength="20"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/testInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout"
+        android:layout_marginTop="10dp"
+
+        android:hint="  Mật khẩu"
+        app:endIconMode="password_toggle"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_pw"
+            android:inputType="textPassword"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#5e6dbd"
+            android:text="Đăng ký"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_thoat"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#5e6dbd"
+            android:onClick="btn_thoat"
+            android:text="Thoát" />
+    </LinearLayout>
+</LinearLayout>

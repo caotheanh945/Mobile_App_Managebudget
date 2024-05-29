@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FtracerProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TaoThongBao"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BaoCaoThuChi"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PostActi"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Notification"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PickRoleLogin"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".activity.Dang_Ky_Tv"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Dang_Nhap"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Dang_Ky"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Family"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Dang_nhap_tv"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

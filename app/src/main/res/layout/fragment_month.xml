@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MonthFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/topradius"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:text="0 Đồng" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:text="Tổng đã chi tháng này: " />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:id="@+id/column1"
+                android:layout_width="50dp"
+                android:layout_height="200dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="#D8D8D8">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/column2"
+                android:layout_width="50dp"
+                android:layout_height="200dp"
+
+                android:background="#D8D8D8"
+                android:layout_toRightOf="@id/column1">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/column1"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp"
+                android:text="Tháng trước"></TextView>
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/column1"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@id/tv8"
+                android:text="Tháng này"></TextView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

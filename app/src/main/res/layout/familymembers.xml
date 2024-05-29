@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LinearBackground"
+    android:padding="15dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgmember"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/notron_notification"
+        android:src="@drawable/baseline_person_24" />
+    <TextView
+        android:id="@+id/membername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgmember"
+        android:textSize="15sp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/rolemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/membername"
+        android:layout_toRightOf="@id/imgmember"
+        android:text="wife"
+        android:textSize="15dp"
+        />
+
+
+</RelativeLayout>

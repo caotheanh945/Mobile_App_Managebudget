@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgr"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.Dang_Nhap">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textview_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:minHeight="48dp"
+        android:onClick="dangki"
+        android:text="ĐĂNG NHẬP"
+        android:textStyle="bold"
+        android:textColor="#3C8D8F"
+        android:textSize="35sp"
+        tools:ignore="OnClick" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:hint="  Email đăng nhập"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_username"
+            android:maxLength="100"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/testInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout"
+        android:layout_marginTop="12dp"
+        android:hint="  Mật khẩu"
+        app:endIconMode="password_toggle"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_Password"
+            android:inputType="textPassword"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu ?"
+        android:textColor="#3C8D8F"
+        android:textStyle="bold"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Đăng nhập"
+        android:textStyle="bold"
+        android:layout_marginTop="80px"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:background="#5e6dbd"
+        />
+
+    <LinearLayout
+        android:id="@+id/lldangki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        >
+        <EditText
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingRight="2dp"
+            android:textStyle="bold"
+            android:text="Bạn chưa có tài khoản ?"
+            android:textColor="#3C8D8F"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+        <Button
+            android:id="@+id/btRegister"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Đăng ký ngay"
+            android:paddingLeft="0dp"
+            android:textColor="#5e6dbd"
+            android:textStyle="bold"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </LinearLayout>
+</LinearLayout>

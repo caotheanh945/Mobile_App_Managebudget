@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgr"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.Dang_Nhap">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpaper"
+        android:layout_width="match_parent"
+        android:layout_height="260dp" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circle_indicator"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        app:ci_drawable="@drawable/background_indicator"
+        android:layout_height="30dp"/>
+    <TextView
+        android:id="@+id/textview_login"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:minHeight="48dp"
+        android:onClick="dangki"
+        android:text="MONEY TRACKER"
+        android:textColor="#5e6dbd"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnloginadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colbt"
+        android:layout_marginTop="30dp"
+        android:text="quản trị viên" />
+
+    <Button
+        android:id="@+id/btnloginthanhvien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colbt"
+        android:layout_marginTop="20dp"
+        android:text="thành viên gia đình" />
+
+    <Button
+        android:id="@+id/btn_dk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colbt"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:text="Bạn chưa có tài khoản? Đăng ký ngay" />
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PostActi">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:background="#DEFDFE"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:background="#DEFDFE"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/tvTaopost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Tạo bài viết"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/btnBack"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="Đăng" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgpostuser"
+        android:layout_width="50dp"
+        android:layout_below="@id/layout1"
+        android:layout_height="50dp"
+        android:src="@drawable/imgg" />
+
+    <TextView
+        android:id="@+id/tvuserpostname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="2dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/imgpostuser"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/edtpostcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgpostuser"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp"
+        android:background="@null"
+        android:layout_marginBottom="20dp"
+        android:hint="Bạn đang nghĩ gì?"
+        android:inputType="textMultiLine" />
+    <Button
+        android:id="@+id/btnChoose"
+        android:text="Chọn ảnh"
+        android:layout_width="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/edtpostcontent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imgViewPost"
+        android:layout_below="@id/btnChoose"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

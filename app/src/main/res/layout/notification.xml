@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LinearBackground"
+    android:padding="15dp"
+    android:background="#BFDCEC">
+
+        <ImageView
+            android:id="@+id/imguser"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_post"
+            android:src="@drawable/baseline_person_24" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imguser"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/tvcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/username"
+            android:textSize="15sp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="6dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imguser"
+            android:textSize="12sp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa xem"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            />
+
+</RelativeLayout>
